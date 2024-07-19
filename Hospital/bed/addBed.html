@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Add Doctor | Patient Palooza</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css?v=2" />
+  <link rel="icon" href="../css/1.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Bed Palooza</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                  <li><a href="../Index.html">HOME</a></li>
+                  <li><a href="bedList.php">SEARCH BED</a></li>
+                  <li><a href="deleteBed.html">DELETE BED</a></li>
+                  <li class="active">ADD BED</li>
+                  <li><a href="updateBed.html">UPDATE BED</a></li>
+                </ul>
+            </div>
+
+           
+        </div> 
+    <div class="content">
+
+        <h1><span>ADD Bed</span></h1>
+        <p class="par">Enter and Request new Bed.. for Customer's request</p>
+
+      <div class="formDoctorAdd">
+        <form action="bed.php" method="post" id="addBed">
+
+          <label for="bedName">Bed Name:</label>
+          <input type="text" id="bedName" name="bedName" required>
+      
+   
+          <label for="ratePerDay">Rate Per Day:</label>
+          <input type="text" id="ratePerDay" name="ratePerDay" required>
+   
+    
+          <label for="bedType">Bed Type:</label>
+          <input type="text" id="bedType" name="bedType" required>
+    
+          <input type="hidden" name="input" value="1">
+        </form>
+        <button class="btnn" form="addBed" name="submit" value="submit">ADD BED</button>
+      </div>
+
+    </div>
+    </div>
+  </body>
+</html>
+
+<style>
+.main{
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("../css/BGimage2.jpg");
+  position: relative;
+}
+
+</style>

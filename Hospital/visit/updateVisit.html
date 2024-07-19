@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Register | VISIT Palooza</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css?v=2" />
+  <body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">VISIT Palooza</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                  <li><a href="../Index.html">HOME</a></li>
+                  <li><a href="visitList.php">SEARCH VISITS</a></li>
+                  <li><a href="deleteVisit.html">DELETE VISIT</a></li>
+                  <li><a href="addVisit.html">ADD VISIT</a></li>
+                  <li class="active">UPDATE VISIT</a></li>
+
+                </ul>
+            </div>
+
+           
+        </div> 
+    <div class="content">
+
+        <h1><span>Update Visit Record</span> <br>Input Visit ID and </br>THE ID of Patient and the Doctor</h1>
+        <p class="par">Automatically Updated When match in the system.
+            <br> so sit back and relax</p>
+
+      <div class=" formVisitAdd ">
+      <form action="visit.php" method="post"  id="updateVisit">
+
+          <label for="visitId">Visit ID:</label>
+          <input type="text" id="visitId" name="visitId"required>
+
+          <label for="patientId">Patient ID:</label>
+          <input type="text" id="patientId" name="patientId">
+      
+   
+          <label for="patientType">Patient Type:</label>
+          <input type="text" id="patientType" name="patientType">
+   
+          <label for="doctorId">Doctor ID:</label>
+          <input type="text" id="doctorId" name="doctorId">
+
+          
+          <label for="bedId">Bed ID:</label>
+          <input type="text" id="bedId" name="bedId">
+    
+          <label for="dateOfVisit">Date OF Visit:</label>
+          <div class = "date">
+            <div>
+          <input type="text" id="dateToday" name="dateOfVisitYear" placeholder = "year">
+            </div>
+            <div>
+          <input type="text" id="dateToday" name="dateOfVisitMonth" placeholder = "month">
+            </div> 
+            <div>
+          <input type="text" id="dateToday" name="dateOfVisitDay" placeholder = "day">
+            </div>
+
+          </div>
+         
+          <label for="dateOfDischarge">Date of Discharge:</label>
+          <div class = "date">
+            <div>
+          <input type="text" id="dateOfDischarge" name="dateOfDischargeYear" placeholder = "year">
+            </div>
+            <div>
+          <input type="text" id="dateOfDischarge" name="dateOfDischargeMonth" placeholder = "month">
+            </div> 
+            <div>
+          <input type="text" id="dateOfDischarge" name="dateOfDischargeDay" placeholder = "day">
+            </div>
+
+          </div>
+
+          <label for="symptoms">Symptoms:</label>
+          <input type="text" id="symptoms" name="symptoms">
+
+          <label for="disease">Disease:</label>
+          <input type="text" id="disease" name="disease">
+
+          <label for="treatment">Treatment:</label>
+          <input type="text" id="treatment" name="treatment">
+    
+          <input type="hidden" name="input" value="2">
+      </form>
+      <button class="btnn" form="updateVisit" name="submit" value="submit">UPDATE VISIT</button>
+    </div>
+
+    </div>
+    </div>
+  </body>
+</html>
+
+
+<style>
+  .main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    background-image: url("../css/visit.jpg");
+    position: relative;
+}
+</style>
